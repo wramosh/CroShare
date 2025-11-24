@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+	--color-background:#2B2533;
+	--color-tipografia-alternativo:#CDB4DB;
+	--color-tipografia-secundario:#939393;
+	--color-tipografia-principal:#F5F5F5;
+	--color-iconos-secundario:#CDB4DB;
+	--color-iconos-principal:#7B4AE2;
+	--color-gris-oscuro:#272727;
+}
+
+
+body{
+    width: 430;
+    height: 932;
+    font-family: "Inter", sans-serif;
+    background-color: var(--color-background);
+}
+
+.croshareminilogo{
+    margin-top: 15%;
+    padding-left: 35%;
+    background-color: var(--color-background);
+}
+
+.navbarcroshare{
+    text-align: center;
+    background-color: var(--color-background);
+    color: var(--color-tipografia-principal);
+    padding-top: 5%;
+    padding-bottom: 3%;
+    box-shadow: 0px 5px 5px #171120;
+}
+
+.btn-secondary{
+    --bs-btn-bg: var(--color-background);
+    --bs-btn-active-bg: var(--color-background);
+    --bs-btn-border-color: var(--color-background);
+    --bs-btn-active-border-color: var(--color-background);
+    --bs-btn-hover-bg: var(--color-background);
+    --bs-btn-hover-border-color: var(--color-background);
+    font-size: 12px;
+
+}
+
+
+.cardposts{
+    background-color: var(--color-background);
+    color: var(--color-tipografia-principal);
+    margin-top: 5%;
+    margin-left: 1%;
+}
+
+.perfilposts{
+    font-size: 16px;
+}
+
+.perfilestado{
+    font-size: 10px;
+    color: var(--color-tipografia-secundario);
+}
+
+
+
+.splash-container {
+    margin-top: 25%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}

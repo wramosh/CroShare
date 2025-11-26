@@ -42,6 +42,14 @@
         </div>
     </section>
 
+    <section class="pull-to-refresh">
+        <div class="spinner-border" role="status">
+        </div>
+
+    </section>
+
+
+
     <section>
         <div class="card cardposts" style="width: 22rem;">
             <div class="card-body">
@@ -54,7 +62,7 @@
                         <h6 class="perfilestado">Hace 15 minutos</h6>
                     </article>
                     <article class="col-4">
-                        <button type="button" class="btn btn-primary">Seguir</button>
+                        <button type="button" class="btn btn-primary-card">Seguir</button>
                     </article>
                 </div>
 
@@ -71,5 +79,31 @@
 <!-- Script from Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+
+<script>
+
+const pullToRefresh = document.querySelector('.pull-to-refresh');
+let touchstartY = 0;
+document.addEventListener('touchstart', e => {
+  touchstartY = e.touches[0].clientY;
+});
+document.addEventListener('touchmove', e => {
+  const touchY = e.touches[0].clientY;
+  const touchDiff = touchY - touchstartY;
+  if (touchDiff > 0 && window.scrollY === 0) {
+    pullToRefresh.classList.add('seen');
+    e.preventDefault();
+  }
+});
+document.addEventListener('touchend', e => {
+  if (pullToRefresh.classList.contains('seen')) {
+    pullToRefresh.classList.remove('seen');
+    location.reload();
+  }
+});
+
+</script>
+
+
 </body>
 </html>

@@ -17,6 +17,9 @@ body{
     height: 932;
     font-family: "Inter", sans-serif;
     background-color: var(--color-background);
+    overscroll-behavior-y: auto;
+
+
 }
 
 .croshareminilogo{
@@ -201,4 +204,47 @@ a {
     --bs-offcanvas-transition: transform 0.3s 
 ease-in-out;
     --bs-offcanvas-title-line-height: 1.5;
+}
+
+.btn-primary-card{
+    --bs-btn-bg: var(--color-iconos-principal);
+    --bs-btn-color: var(--color-tipografia-principal);
+    --bs-btn-active-bg: var(--color-iconos-principal);
+    --bs-btn-border-color: var(--color-iconos-principal);
+    --bs-btn-active-border-color: var(--color-iconos-principal);
+    --bs-btn-hover-bg: var(--color-iconos-principal);
+    --bs-btn-hover-border-color: var(--color-iconos-principal);
+    --bs-btn-padding-x: 1.5rem;
+    --bs-btn-padding-y: 0.375rem;
+    --bs-btn-border-radius: 18px;
+    font-size: 14px;
+
+
+}
+
+
+.pull-to-refresh {
+  position:relative;
+  top: -180px;  
+  display: flex;
+  height: -8px;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 10s;
+  transition-property: top;
+  transition-timing-function: ease-in-out;
+  transition-property: opacity;
+  transition-duration: 10s;
+}
+.pull-to-refresh.seen {
+  top: 0 !important; /* Alteracion de posicion */
+  height: 13vh !important; /* Altura de espacio cuando aparece Spinner */
+  transition-property: height;
+  transition-duration: 50s;
+  transition-timing-function: ease-in-out;
+}
+
+.spinner-border {
+    border: var(--bs-spinner-border-width) solid rgb(204 179 218);
+    border-right-color: transparent;
 }

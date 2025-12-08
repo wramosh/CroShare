@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>@Denji_motosierra - CroShare</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="Chat.css">
+</head>
+<body class="fondochats">
+
+
+    <header>
+        <section>
+            <div class="container navbarchatsuperior mb-3">
+                <div class="row rowuserchat mt-2">
+                    <div class="col-2">
+                        <button type="button" class="btn iconoback" onclick="window.history.back();"><i class="fa-solid fa-chevron-left"></i></button>
+                    </div>
+                    <div class="col-6 maginleftuserchat">
+                        <img src="img/imgprofile_denji.png" class="rounded-circle me-2" alt="@Denji_motosierra">
+                        <div>
+                            <h6 class="mb-0 fw-bold">@Denji_motosierra</h6>
+                            <small class="cardchatstime">En línea</small>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="btn iconoback" onclick="window.history.back();"><i class="fa-solid fa-gear"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- Área de mensajes -->
+    <section id="chat">
+        <div class="container chatSpace">
+            <div id="chatText">
+                <!-- Mensajes del chat se cargarán aquí -->
+                
+                <!-- Mensaje recibido (ejemplo) -->
+                <div class="row">
+
+                    <div class="col-10">
+                        <div class="message received mb-3">
+                            <div class="message-content chatboxrecibido p-3">
+                                <p class="mb-0">¡Hola! ¿Viste mi último tutorial de flores?</p>
+                                <small class="cardchatstime d-block mt-1">10:15 AM</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-2">
+                        <img src="img/melissaprofile.png" class="rounded-circle" alt="@Maestro_shifu" width="40px">
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-2">
+                        <img src="img/imgprofile_denji.png" class="rounded-circle" alt="@Denji_motosierra" width="40px">
+                    </div>
+
+                    <div class="col-10">
+                        <div class="message sent mb-3">
+                            <div class="message-content chatboxenviado p-3">
+                                <p class="mb-0">¡Sí! Está increíble, ¿qué tipo de lana usaste?</p>
+                                <small class="cardchatstimesec d-block mt-1">10:17 AM</small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-10">
+                        <div class="message received mb-3">
+                            <div class="message-content chatboxrecibido p-3">
+                                <p class="mb-0">Usé lana acrílica de 4mm, es perfecta para principiantes</p>
+                                <small class="cardchatstime d-block mt-1">10:18 AM</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-2">
+                        <img src="img/melissaprofile.png" class="rounded-circle" alt="@Maestro_shifu" width="40px">
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Área para escribir mensajes -->
+        <div class="p-0 fixed-bottom m-3">
+            <div class="row">
+                <form class="align-items-center">
+                    <div class="input-group">
+                        <input type="text" name="tak" id="talk" class="form-control chatbarra" 
+                               aria-label="writingSpace" placeholder="Escribe un mensaje...">
+                        <button class="btn btn-primary botonsend" type="button" id="send">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="Chat.js"></script>
+
+</body>
+</html>

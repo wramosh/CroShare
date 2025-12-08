@@ -9,6 +9,8 @@
 	--color-iconos-principal:#7B4AE2;
 	--color-gris-oscuro:#272727;
     --color-cards-inicio:#20192A;
+    --color-chatbox-recibido:#D9D9D9;
+    --color-time-alternativo:#917e9b;
 }
 
 
@@ -264,4 +266,117 @@ p{
     width: 315px;
     height: 315px;
     margin-top: 6%;
+}
+
+.titlechats{
+    color: var(--color-tipografia-principal);
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 18%;
+    margin-left: 35%;
+}
+
+.btn-chats{
+    color: var(--color-iconos-secundario);
+}
+
+.navbarchats{
+    background-color: var(--color-background);
+    text-align: center;
+    padding-top: 2%;
+}
+
+.titlebtnchats{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.iconbtnchats{
+    font-size: 22px;
+}
+
+.anchonavbarchats{
+    width: 360px;
+}
+
+.navbarchatsuperior{
+    text-align: center;
+    background-color: var(--color-background);
+    color: var(--color-tipografia-principal);
+    padding-top: 1%;
+    box-shadow: 0px 5px 5px #171120;
+}
+
+.cardchats{
+    background-color: var(--color-background);
+    color: var(--color-tipografia-principal);
+    font-weight: 700;
+    border: unset;
+    text-decoration: unset;
+}
+
+.cardchatstitle{
+    font-size: 16px;
+}
+
+.cardchatsbadge{
+    font-size: 12px;
+}
+
+.cardchatstime{
+    font-size: 12px;
+    color: var(--color-tipografia-secundario);
+}
+
+.maginleftuserchat{
+    margin-left: 8%;
+}
+
+.rowuserchat{
+    --bs-gutter-x: 0rem;
+    padding-bottom: 3%;
+}
+
+.chatboxrecibido{
+    background-color: var(--color-chatbox-recibido);
+    border-radius: 20px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.chatboxenviado{
+    background-color: var(--color-iconos-secundario);
+    border-radius: 20px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.cardchatstimesec{
+    font-size: 12px;
+    color: var(--color-time-alternativo);
+}
+
+.chatbarra{
+    background-color: var(--color-background);
+    color: var(--color-tipografia-principal);
+}
+
+.fondochats{
+    background-image: url(../img/bgchat.png);
+    background-size: cover; /* La imagen cubre toda la pantalla sin deformarse */
+    background-repeat: no-repeat; /* Evita que se repita */
+    background-attachment: fixed; /* Efecto parallax ligero al hacer scroll */
+    background-position: center center; /* Centra la imagen */
+}
+
+.botonsend{
+    --bs-btn-border-radius: 6px;
+    --bs-btn-padding-x: 2rem;
+    --bs-btn-padding-y: 0rem;
+}
+
+.chatbarra::placeholder {
+    color: white;
+    opacity: 1; 
 }

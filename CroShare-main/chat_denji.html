@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>@Denji_motosierra - CroShare</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="Chat.css">
+</head>
+<body>
+
+    <!-- Header con información del usuario -->
+    <header>
+        <section>
+            <div class="container py-3">
+                <div class="row align-items-center">
+                    <div class="col-2">
+                        <a href="chat_main.html" class="text-decoration-none text-dark">
+                            <i class="fas fa-arrow-left fa-lg"></i>
+                        </a>
+                    </div>
+                    <div class="col-8 text-center">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img src="img/imgprofile_denji.png" class="rounded-circle me-2" width="35" alt="@Denji_motosierra">
+                            <div>
+                                <h5 class="mb-0 fw-bold">@Denji_motosierra</h5>
+                                <small class="text-muted">En línea</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 text-end">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- Área de mensajes -->
+    <section id="chat">
+        <div class="container chatSpace">
+            <div id="chatText">
+                <!-- Mensajes del chat se cargarán aquí -->
+                
+                <!-- Mensaje recibido (ejemplo) -->
+                <div class="message received mb-3">
+                    <div class="message-content bg-light p-3 rounded">
+                        <p class="mb-0">¡Hola! ¿Viste mi último tutorial de flores?</p>
+                        <small class="text-muted d-block mt-1">10:15 AM</small>
+                    </div>
+                </div>
+                
+                <!-- Mensaje enviado (ejemplo) -->
+                <div class="message sent mb-3">
+                    <div class="message-content bg-primary text-white p-3 rounded">
+                        <p class="mb-0">¡Sí! Está increíble, ¿qué tipo de lana usaste?</p>
+                        <small class="text-white-50 d-block mt-1">10:17 AM</small>
+                    </div>
+                </div>
+                
+                <!-- Mensaje recibido (ejemplo) -->
+                <div class="message received mb-3">
+                    <div class="message-content bg-light p-3 rounded">
+                        <p class="mb-0">Usé lana acrílica de 4mm, es perfecta para principiantes</p>
+                        <small class="text-muted d-block mt-1">10:18 AM</small>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Área para escribir mensajes -->
+        <div class="container p-0 fixed-bottom bg-white border-top">
+            <div class="row ms-1 me-1">
+                <form class="align-items-center p-3">
+                    <div class="input-group">
+                        <input type="text" name="tak" id="talk" class="form-control rounded-pill" 
+                               aria-label="writingSpace" placeholder="Escribe un mensaje...">
+                        <button class="btn btn-primary rounded-circle ms-2" type="button" id="send">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="Chat.js"></script>
+
+</body>
+</html>

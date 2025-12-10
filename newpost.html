@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>CroShare</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/newpost.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+        <section>
+            <div class="ms-4 mt-1">
+                <div>
+                    <button type="button" class="btn iconobacknewpost" onclick="window.history.back();">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-2">
+                    <img src="img/melissaprofile.png" class="rounded-circle" alt="@melissacrochet123" width="40px">
+                </div>
+                
+                <div class="col-10">
+                    <h6 class="titleuser">@melissacrochet123</h6>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="newpost-section">
+        <div class="container">
+            <form id="newPostForm" action="home.html" method="get">
+                <div class="newpost-box">
+
+                    <textarea class="newpost-text"
+                              placeholder="Escribe tu publicación aquí..."></textarea>
+
+                    <div class="newpost-image-row text-end mb-3">
+                        <label for="imageInput" class="btn-icon-img">
+                            <i class="fa-regular fa-image"></i>
+                        </label>
+                    </div>
+
+                    <div class="newpost-footer row">
+                        <div class="col-6 d-flex align-items-center">
+                            <div class="form-check form-switch newpost-switch">
+                                <input class="form-check-input" type="checkbox" id="privateSwitch">
+                                <label class="form-check-label" for="privateSwitch">Privado</label>
+                            </div>
+                        </div>
+
+                        <div class="col-6 text-end">
+                            <button type="submit" class="btn btn-newpost-submit">Subir</button>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script>
+      const form = document.getElementById('newPostForm');
+      const textArea = document.querySelector('.newpost-text');
+
+      form.addEventListener('submit', function () {
+        const texto = textArea.value.trim();
+
+        if (texto !== '') {
+          localStorage.setItem('nuevoPostTexto', texto);
+        }
+      });
+    </script>
+
+</body>
+</html>
+

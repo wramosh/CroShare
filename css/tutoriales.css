@@ -1,0 +1,36 @@
+.iconobacktutoriales{
+    color: var(--color-iconos-secundario);
+    font-size: 24px;
+    --bs-btn-padding-x: 1rem;
+    --bs-btn-padding-y: 1.3rem;
+    padding-bottom: 3%;
+}
+
+.headertuto{
+    text-align: center;
+}
+
+.titletuto{
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--color-tipografia-principal);
+    margin-bottom: 2px;
+}
+
+.desctuto{
+    font-size: 12px;
+    color: var(--color-tipografia-secundario);
+}
+
+.profile-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px 0;
+    scroll-behavior: smooth;
+}
+
+.profile-carousel img {
+    width: 40%;
+    border-radius: 12px;
+}

@@ -5,23 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <!-- Your app title -->
-    <title>App test</title>
+    <title>CroShare</title>
    <!-- Path to Bootstrap -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
     <!-- Path to your custom app styles-->
-    <link rel="stylesheet" href="#">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/explore.css">
  <!-- Path to font awesome styles-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
+<nav class="bottom-nav">
+    <div class="bottom-nav-inner">
+
+        <a href="home.html" class="bottom-nav-item">
+            <i class="fa-solid fa-house"></i>
+        </a>
+
+        <a href="explore.html" class="bottom-nav-item active">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+
+        <a href="notis.html" class="bottom-nav-item">
+            <i class="fa-solid fa-bell"></i>
+        </a>
+
+        <a href="chat_main.html" class="bottom-nav-item">
+            <i class="fa-solid fa-message"></i>
+        </a>
+
+        <a href="profilemelissa.html" class="bottom-nav-item">
+            <i class="fa-solid fa-user"></i>
+        </a>
+
+    </div>
+</nav>
+
+
 <body>
 	
 	
 	<div class="container-fluid p-3">
 
    
-    <div class="text-center mb-3">
-        <img src="logo.png" class="img-fluid" alt="logo">
+    <div class="text-center mb-4 mt-4">
+        <img src="img/CroShareMiniLogo.png" alt="logo">
     </div>
 
     
@@ -42,25 +71,25 @@
     </div>
 
     
-    <h5 class="mt-4">Recomendaciones</h5>
+    <h5 class="titlenotificaciones">Recomendaciones</h5>
 
    
     <div class="carouselContent activeTab" id="tab1Content">
-        <div class="row g-3 mt-2">
+        <div class="row g-3">
             <div class="col-6">
-                <img src="ranas.png" class="w-100 rounded" alt="rana">
+                <img src="img/ranas.png" class="w-100 rounded" alt="rana">
                 <p>@maestro_shifu</p>
             </div>
             <div class="col-6">
-                <img src="tulipanes.png" class="w-100 rounded" alt="tulipanes">
+                <img src="img/tulipanes.png" class="w-100 rounded" alt="tulipanes">
                 <p>@maestro_shifu</p>
             </div>
 			<div class="col-6">
-                <img src="headbands.png" class="w-100 rounded" alt="headband">
+                <img src="img/headbands.png" class="w-100 rounded" alt="headband">
                 <p>@maestro_shifu</p>
             </div>
             <div class="col-6">
-                <img src="osos.png" class="w-100 rounded" alt="osos">
+                <img src="img/osos.png" class="w-100 rounded" alt="osos">
                 <p>@maestro_shifu</p>
             </div>
         </div>
@@ -68,21 +97,21 @@
 
     
     <div class="carouselContent" id="tab2Content">
-        <div class="row g-3 mt-2">
+        <div class="row g-3">
             <div class="col-6">
-                <img src="buho.png" class="w-100 rounded" alt="buho">
+                <img src="img/buho.png" class="w-100 rounded" alt="buho">
                 <p>@maestro_shifu</p>
             </div>
             <div class="col-6">
-                <img src="gorro.png" class="w-100 rounded" alt="gorrominecraft">
+                <img src="img/gorro.png" class="w-100 rounded" alt="gorrominecraft">
                 <p>@maestro_shifu</p>
             </div>
 			<div class="col-6">
-                <img src="jake.png" class="w-100 rounded" alt="jake">
+                <img src="img/jake.png" class="w-100 rounded" alt="jake">
                 <p>@maestro_shifu</p>
             </div>
             <div class="col-6">
-                <img src="flor.png" class="w-100 rounded" alt="flor">
+                <img src="img/flor.png" class="w-100 rounded" alt="flor">
                 <p>@maestro_shifu</p>
             </div>
         </div>
@@ -90,60 +119,27 @@
 
     
     <div class="carouselContent" id="tab3Content">
-        <div class="row g-3 mt-2">
+        <div class="row g-3">
             <div class="col-6">
-                <img src="gorropez.png" class="w-100 rounded" alt="gorropez">
+                <img src="img/gorropez.png" class="w-100 rounded" alt="gorropez">
                 <p>@maestro_shifu</p>
             </div>
             <div class="col-6">
-                <img src="hornet.png" class="w-100 rounded" alt="hornet">
+                <img src="img/hornet.png" class="w-100 rounded" alt="hornet">
                 <p>@maestro_shifu</p>
             </div>
 			<div class="col-6">
-                <img src="gato.png" class="w-100 rounded" alt="gato">
+                <img src="img/gato.png" class="w-100 rounded" alt="gato">
                 <p>@maestro_shifu</p>
             </div>
             <div class="col-6">
-                <img src="bufandasnoopy.png" class="w-100 rounded" alt="bufandasnoopy">
+                <img src="img/bufandasnoopy.png" class="w-100 rounded" alt="bufandasnoopy">
                 <p>@maestro_shifu</p>
             </div>
         </div>
     </div>
 
 </div>
-
-<style>
-    
-    #tabHighlight {
-        position: absolute;
-        bottom: 0;
-        width: 33%;
-        height: 4px;
-        background: purple;
-        transition: transform 0.3s ease;
-        border-radius: 10px;
-    }
-
-    .tabItem {
-        cursor: pointer;
-        position: relative;
-        z-index: 5;
-    }
-
-    
-    .carouselContent {
-        display: none;
-        opacity: 0;
-        transform: translateX(20px);
-        transition: 0.3s ease;
-    }
-
-    .carouselContent.activeTab {
-        display: block;
-        opacity: 1;
-        transform: translateX(0);
-    }
-</style>
 
 <script>
     const tabHighlight = document.getElementById("tabHighlight");
@@ -155,18 +151,29 @@
         3: document.getElementById("tab3Content")
     };
 
+    function moverHighlight(index) {
+        const tab = tabItems[index];
+        const anchoTab = tab.offsetWidth;
+        const anchoHighlight = tabHighlight.offsetWidth;
+
+        const posicion = tab.offsetLeft + (anchoTab / 2) - (anchoHighlight / 2);
+
+        tabHighlight.style.transform = `translateX(${posicion}px)`;
+    }
+
     tabItems.forEach((tab, index) => {
         tab.addEventListener("click", () => {
 
-            
-            tabHighlight.style.transform = `translateX(${index * 100}%)`;
+            moverHighlight(index);
 
-            
             Object.values(contents).forEach(c => c.classList.remove("activeTab"));
             contents[index + 1].classList.add("activeTab");
         });
     });
+
+    moverHighlight(0);
 </script>
+
 
 	
 	

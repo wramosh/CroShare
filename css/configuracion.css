@@ -1,0 +1,148 @@
+body{
+    padding-bottom: unset;
+}
+
+.card {
+    border-radius: 12px;
+    border: none;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    --bs-card-bg: var(--color-background);
+}
+
+.card-body {
+    padding: 16px;
+}
+
+.titlenotis{
+    color: var(--color-tipografia-principal);
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.card i {
+    color: var(--color-iconos-principal);
+}
+
+.card h6 {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--color-tipografia-principal);
+}
+
+.card p {
+    font-size: 12px;
+    color: var(--color-tipografia-secundario);
+}
+
+.card .fa-chevron-right {
+    color: var(--color-iconos-principal);
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.iconoback {
+    color: var(--color-iconos-secundario);
+    font-size: 22px;
+    --bs-btn-padding-x: 1.5rem;
+    --bs-btn-padding-y: 1.3rem;
+}
+
+
+.form-switch {
+    padding-left: 0;
+}
+
+.form-switch .form-check-input {
+    margin-left: 0;
+    cursor: pointer;
+}
+
+.form-switch .form-check-input:checked {
+    background-color: var(--color-iconos-principal);
+    border-color: var(--color-iconos-principal);
+    box-shadow: none;
+}
+
+.form-switch .form-check-input:focus {
+    box-shadow: none;
+}
+
+hr {
+    margin: 1rem 0;
+    color: var(--color-tipografia-principal);
+    border: 0;
+    border-top: var(--bs-border-width) solid;
+    opacity: .25;
+}
+
+.confirm-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.confirm-modal .modal-content {
+    background: white;
+    border-radius: 14px;
+    max-width: 340px;
+    width: 90%;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.modal-actions {
+    width: 100%;
+}
+
+.btn-cancelar {
+    background-color: var(--color-iconos-principal);
+    color: var(--color-tipografia-principal);
+    border: none;
+    border-radius: 20px;
+    padding: 8px 22px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.btn-confirmar {
+    background: transparent;
+    color: var(--color-background);
+    border: 2px solid var(--color-background);
+    border-radius: 20px;
+    padding: 8px 22px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.btn-cancelar,
+.btn-confirmar {
+    flex-shrink: 0;
+}
+
+.titlealertas{
+    color: var(--color-tipografia-principal);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.desbloquear {
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+

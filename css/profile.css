@@ -1,3 +1,8 @@
+body{
+    padding-bottom: unset;
+    padding-bottom: 15%;
+}
+
 .seccionperfil{
     text-align: center;
     color: var(--color-tipografia-principal);
@@ -126,6 +131,12 @@
     color: var(--color-background);
     font-weight: 600;
 }
+
+.tab-btn.disabled {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
 
 
 

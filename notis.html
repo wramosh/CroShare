@@ -27,7 +27,9 @@
                         <h1 class="titlenotis">Notificaciones</h1>
                     </div>
                     <div class="col-2">
-                        <button type="button" class="btn iconosperfil" onclick="window.history.back();"><i class="fa-solid fa-gear"></i></button>
+                        <a href="configuracion.html" class="btn iconosperfil">
+                            <i class="fa-solid fa-gear"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -36,9 +38,9 @@
 	
 	
 <section>
-    <div class="container">
+    <div class="container mx-auto">
       <h5 class="titlenotificaciones">Nuevos Seguidores</h5>
-        <table class="table">
+        <table class="table align-middle">
         
           <tbody>
             <tr>
@@ -76,12 +78,12 @@
 	<div class="container">
 	  <h5 class="titlenotificaciones">Sugerencias</h5>
   
-      <div class="row suggestion-row">
+      <div class="row suggestion-row mx-auto">
         <div class="col-2">
           <img src="img/pfp4.jpg" width="40" class="rounded mx-auto d-block" alt="pfp4">
         </div>
         <div class="col">
-          <h6 class="usuarionotissug">Yo-Hokki</h6><p class="descsug1">Pixelartist, blah blah blah</p><p class="descsug2">Seguido por: @HilosDeEncanto +2</p>
+          <h6 class="usuarionotissug">Yo-Hokki</h6><p class="descsug1">Pixelartist, blah blah blah</p><p class="descsug2">Seguido por: @HilosDeEncanto</p>
         </div>
         <div class="col-2">
           <i class="fa-solid fa-ellipsis iconosug"></i>
@@ -97,7 +99,7 @@
         </div>
       </div>
 
-      <div class="row suggestion-row mt-3">
+      <div class="row suggestion-row mt-3 mx-auto">
         <div class="col-2">
           <img src="img/pfp6.jpg" width="40" class="rounded mx-auto d-block" alt="pfp4">
         </div>
@@ -150,15 +152,12 @@
 document.querySelectorAll('.btn-secondary-quitar').forEach(boton => {
     boton.addEventListener('click', function () {
 
-        // 1. Buscar el bloque principal de sugerencia
         let bloqueTexto = this.closest('.row').previousElementSibling;
 
-        // 2. Eliminar el bloque de texto (foto + datos)
         if (bloqueTexto && bloqueTexto.classList.contains('suggestion-row')) {
             bloqueTexto.remove();
         }
 
-        // 3. Eliminar la fila donde está el botón
         this.closest('.row').remove();
     });
 });

@@ -1,0 +1,77 @@
+body{
+    padding-bottom: unset;
+    padding-bottom: 10%;
+}
+
+.card {
+    border-radius: 12px;
+    border: none;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    --bs-card-bg: var(--color-background);
+}
+
+.card-body {
+    padding: 16px;
+}
+
+.titlenotis{
+    color: var(--color-tipografia-principal);
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.card i {
+    color: var(--color-iconos-principal);
+}
+
+.card h6 {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--color-tipografia-principal);
+}
+
+.card p {
+    font-size: 12px;
+    color: var(--color-tipografia-secundario);
+}
+
+.card .fa-chevron-right {
+    color: var(--color-iconos-principal);
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.iconoback {
+    color: var(--color-iconos-secundario);
+    font-size: 22px;
+    --bs-btn-padding-x: 1.5rem;
+    --bs-btn-padding-y: 1.3rem;
+}
+
+hr {
+    margin: 1rem 0;
+    color: var(--color-tipografia-principal);
+    border: 0;
+    border-top: var(--bs-border-width) solid;
+    opacity: .25;
+}
+
+.form-control {
+background-color: #fff;
+color: #000;
+}
+
+.form-check-input:checked {
+    background-color: var(--color-iconos-principal);
+    border-color: var(--color-iconos-principal);
+}
+
+.form-check-input:focus {
+    box-shadow: none;
+}

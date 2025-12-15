@@ -1,3 +1,8 @@
+body{
+    padding-bottom: unset;
+    padding-bottom: 15%;
+}
+
 .iconosperfil{
     color: var(--color-iconos-secundario);
     font-size: 24px;
